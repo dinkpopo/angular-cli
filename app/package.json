@@ -66,6 +66,9 @@
     ]
   },
   "dependencies": {
+    "@ngrx/effects": "^8.6.0",
+    "@ngrx/store": "^8.6.0",
+    "@ngrx/store-devtools": "^8.6.0",
     "@types/debug": "^4.1.2",
     "@types/node-fetch": "^2.1.6",
     "@types/progress": "^2.0.3",
