@@ -1,46 +1,46 @@
-# Outputs
-bazel-*
-test-project-host-*
-dist/
-dist-schema/
+# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# IDEs
-jsconfig.json
+# compiled output
+/dist
+/tmp
+/out-tsc
+# Only exists if Bazel was run
+/bazel-out
 
-# Intellij IDEA/WebStorm
-# https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
-.idea/inspectionProfiles/
-.idea/**/compiler.xml
-.idea/**/encodings.xml
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-.idea/**/usage.statistics.xml
-.idea/**/dictionaries
-.idea/**/shelf
+# dependencies
+/node_modules
 
-# Also ignore code styles because .editorconfig is used instead.
-.idea/codeStyles/
+# profiling files
+chrome-profiler-events*.json
+speed-measure-plugin*.json
 
-# VSCode
-# https://github.com/github/gitignore/blob/master/Global/VisualStudioCode.gitignore
-.vscode/
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-**/*.code-workspace
+.history/*
 
-# Typings file.
-typings/
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
 
-# Misc
-coverage/
-node_modules/
-tmp/
-npm-debug.log*
-yarn-error.log*
-.ng_pkg_build/
-
-# Mac OSX Finder files.
-**/.DS_Store
+# System Files
 .DS_Store
+Thumbs.db
